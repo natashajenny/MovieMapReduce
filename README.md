@@ -26,7 +26,7 @@ The output of the code is in the form below:
 
 where (M,M) shows pairs of movies, [] indicates the list of users and their ratings. For example, (U5,1,3) shows U5 has rated M1 and M2 with 1 and 3 respectively.
 
-## Project description:
+## Project Description
 The project involves the [chaining of two mapreduce jobs](https://stackoverflow.com/questions/38111700/chaining-of-mapreduce-jobs#answer-38113499)
 * First job: UserMapper to map each user to 1 set of (movie, rating)
 * First job: UserReducer to aggregate the set of (movie,rating) for each user key in the form of an ArrayWritable 
@@ -40,7 +40,7 @@ The project involves the [chaining of two mapreduce jobs](https://stackoverflow.
 * output/out: Final result from second MapReduce job
 
 
-## To run the project:
+## Running The Project
 > $ javac -cp ".:Hadoop-Core.jar" MovieMapReduce.java <br>
 > $ java -cp ".:Hadoop-Core.jar" MovieMapReduce INPUT_PATH OUTPUT_PATH
 
